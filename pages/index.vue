@@ -1,7 +1,7 @@
 <template>
     <main>
         <section class="videotitle">
-            <video src="https://6bc41f582d60.vps.myjino.ru/uploads/Rainbow_Nebula_4_K_Motion_Background_094bbbdfd0.mp4" autoplay
+            <video src="https://e436b3cc88eb.vps.myjino.ru/uploads/Rainbow_Nebula_4_K_Motion_Background_094bbbdfd0.mp4" autoplay
                 loop muted></video>
 
             <h1 class="title">Мир психологии и саморазвития!</h1>
