@@ -56,7 +56,7 @@ import MarkdownIt from "markdown-it";
 const markdown = new MarkdownIt();
 
 const { id } = useRoute().params
-const base_url = 'https://e436b3cc88eb.vps.myjino.ru'
+const base_url = 'https://6bc41f582d60.vps.myjino.ru'
 const api = await $fetch(`https://6bc41f582d60.vps.myjino.ru/api/posts/${id}?populate=*`);
 const post = api.data;
 const mark = markdown.render(post.body);

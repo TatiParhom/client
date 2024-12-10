@@ -47,7 +47,7 @@
     </article> -->
   
 <script setup>
-const base_url = "https://e436b3cc88eb.vps.myjino.ru"
+const base_url = "https://6bc41f582d60.vps.myjino.ru"
 const api = await $fetch('https://6bc41f582d60.vps.myjino.ru/api/posts?populate=*')
 const posts = api.data
 const displayedPosts = ref(posts.slice(0, 4)) // отображаем первые 12 статей
