@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-    onMounted(() => initFlowbite())
+    // onMounted(() => initFlowbite())
 </script>
 
 <style scoped>
