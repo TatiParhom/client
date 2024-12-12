@@ -27,7 +27,7 @@ useHead({
   
 htmlAttrs: {
   class: isDarkMode.value
-}
+},
 
   bodyAttrs: {
     class: 'container mx-auto bg-white dark:bg-gray-900'
