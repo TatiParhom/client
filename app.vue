@@ -11,6 +11,9 @@ const base = 'https://6bc41f582d60.vps.myjino.ru'
 const api = await $fetch(`${base}/api/config?populate=*`)
 const config = api.data
 
+const isDarkMode = ref('')
+const isDark = ref(false)
+
 useHead({
   title: config.title,
   meta: [
@@ -21,6 +24,11 @@ useHead({
     { rel: 'icon', type: 'image/x-icon', href: base + config.favicon.url },
 
   ],
+  
+htmlAttrs: {
+  class: isDarkMode.value
+}
+
   bodyAttrs: {
     class: 'container mx-auto bg-white dark:bg-gray-900'
   },
