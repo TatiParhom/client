@@ -4,7 +4,7 @@
             <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
                   <a href="http://e436b3cc88eb.vps.myjino.ru//" class="flex items-center">
-                      <img src="https://e436b3cc88eb.vps.myjino.ru/uploads/cf2ff62cdf9411e29b1586b6a3b862cf_21bf27921f.png" class="h-8 me-3" alt="FlowBite Logo" />
+                      <img src="https://6bc41f582d60.vps.myjino.ru/uploads/cf2ff62cdf9411e29b1586b6a3b862cf_21bf27921f.png" class="h-8 me-3" alt="FlowBite Logo" />
                       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span>
                   </a>
               </div>
