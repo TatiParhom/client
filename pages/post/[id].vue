@@ -74,7 +74,7 @@ async function views() {
     });
 }
 
-onMounted(views())
+// onMounted(views())
 
 
 
