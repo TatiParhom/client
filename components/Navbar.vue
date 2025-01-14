@@ -1,11 +1,11 @@
 <template>
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap items-center justify-between mx-auto py-4">
-      <a href="http://e436b3cc88eb.vps.myjino.ru/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://6bc41f582d60.vps.myjino.ru/uploads/2024_12_26_20_11_16_b2b3580b08.jpg" class="h-10"
           alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span>
-      </a>
+      </NuxtLink>
       <div class="flex gap-8 md:order-2">
         <DarkMode />
         <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
