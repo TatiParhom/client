@@ -21,7 +21,7 @@
                         </svg>
                         <NuxtLink :to="'/category/' + post.categories?.[0].documentId"
                             class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">
-                            {{ post.categories?.[0].title || 'Без категории' }}
+                            {{ post.categories?.[0]?.title || 'Без категории' }}
                         </NuxtLink>
                     </div>
                 </li>
@@ -40,11 +40,17 @@
             </ol>
         </nav>
         <div class="ns_post" v-if="post">
-            <div class="h-80 rounded-2xl my-4 bg-fixed bg-[length:100%_600px]" :style="'background-image: url('+base_url+post.img.url+')'"></div>
-            <h1 class="relative text-4xl">{{ post.title }} <Share /></h1>
+            <div class="h-80 rounded-2xl my-4 bg-fixed bg-[length:100%_600px]" :style="'background-image: url(' + (post.img?.url ? base_url + post.img.url : '') + ')'"></div>
+            <h1 class="relative text-4xl">
+                {{ post.title }}
+                <Share />
+            </h1>
             <p class="opacity-40">{{ formatDate(post.publishedAt?.substring(0, 10)) }}</p>
             <div v-html="mark"></div>
         </div>
+        <p v-else-if="errorMessage" class="text-center text-red-500">
+            {{ errorMessage }}
+        </p>
         <p v-else class="text-center text-gray-500">Загрузка данных...</p>
     </main>
 </template>
@@ -55,29 +61,38 @@ import { ref, onMounted, computed } from "vue";
 
 const markdown = new MarkdownIt();
 const post = ref(null);
+const config = ref(null);
+const errorMessage = ref("");
 const base_url = 'https://6bc41f582d60.vps.myjino.ru';
 const { id } = useRoute().params;
 
-// Загрузка данных поста
+// Загрузка поста
 const fetchPost = async () => {
     try {
         const api = await $fetch(`${base_url}/api/posts/${id}?populate=*`);
-        post.value = api.data;
+        post.value = api.data || {};
     } catch (error) {
         console.error("Ошибка загрузки данных поста:", error);
+        errorMessage.value = "Не удалось загрузить данные поста. Попробуйте позже.";
     }
 };
 
-// Рендеринг Markdown контента
-const mark = computed(() => post.value ? markdown.render(post.value.body) : "");
-
 // Загрузка конфигурации
-const apiConfig = await $fetch(`${base_url}/api/config?populate=*`);
-const config = apiConfig.data;
+const fetchConfig = async () => {
+    try {
+        const apiConfig = await $fetch(`${base_url}/api/config?populate=*`);
+        config.value = apiConfig.data;
+    } catch (error) {
+        console.error("Ошибка загрузки конфигурации:", error);
+    }
+};
 
-// Обновление мета-данных страницы
+// Markdown контент
+const mark = computed(() => post.value ? markdown.render(post.value.body || "") : "");
+
+// Мета-данные
 useHead(computed(() => ({
-    title: post.value ? `${post.value.title} - ${config.title}` : "Загрузка..."
+    title: post.value && config.value ? `${post.value.title} - ${config.value.title}` : "Загрузка...",
 })));
 
 // Форматирование даты
@@ -94,6 +109,8 @@ function formatDate(dateString) {
     return '';
 }
 
-// Загрузка данных при монтировании компонента
-onMounted(() => fetchPost());
+// Загрузка данных
+onMounted(async () => {
+    await Promise.all([fetchPost(), fetchConfig()]);
+});
 </script>
