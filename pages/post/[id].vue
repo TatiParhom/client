@@ -39,7 +39,7 @@
                 </li>
             </ol>
         </nav>
-        <div class="ns_post" v-if="post">
+        <div class="ns_post text-black dark:text-white" v-if="post">
             <div class="h-80 rounded-2xl my-4 bg-fixed bg-[length:100%_600px]" :style="'background-image: url(' + (post.img?.url ? base_url + post.img.url : '') + ')'"></div>
             <h1 class="relative text-4xl">
                 {{ post.title }}

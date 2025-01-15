@@ -9,10 +9,6 @@
     </main>
 </template>
 
-<script setup>
-    // onMounted(() => initFlowbite())
-</script>
-
 <style scoped>
 .videotitle {
     width: 100%;
