@@ -2,7 +2,7 @@
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap items-center justify-between mx-auto py-4">
       <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="~/public/favicon.webp" class=" h-50"
+        <img src="~/public/favicon.webp" class="h-52"
           alt="Flowbite Logo" />
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span> -->
       </NuxtLink>
