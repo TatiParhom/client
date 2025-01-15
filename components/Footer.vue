@@ -4,7 +4,7 @@
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="~/public/favicon.webp" class="h-52" alt="Flowbite Logo" />
+                        <img src="~/public/favicon.webp" class="w-full md:w-80 md:h-52" alt="Flowbite Logo" />
                         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span> -->
                     </NuxtLink>
                     <!--<a href="/" class="flex items-center">
