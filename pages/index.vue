@@ -1,8 +1,7 @@
 <template>
     <main>
         <section class="videotitle">
-            <video src="https://e436b3cc88eb.vps.myjino.ru/uploads/Rainbow_Nebula_4_K_Motion_Background_094bbbdfd0.mp4" autoplay
-                loop muted></video>
+            
 
             <h1 class="title">TAYABLOG</h1>
         </section>
@@ -28,7 +27,7 @@
     width: 100%;
     height: 100%;
     padding: auto;
-    background-color: black;
+    background-color: img;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
     color: white;
