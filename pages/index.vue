@@ -2,16 +2,15 @@
     <main class="bg-customBrown font-sans leading-normal tracking-normal">
 
         <!--Header-->
-        
-        <div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url(''); height: 60vh; max-height:460px;">
-            <div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+
+        <div class="w-full m-0 p-0 bg-cover bg-bottom"
+            style="background-image:url('https://6bc41f582d60.vps.myjino.ru/uploads/IMG_2003_2d89f52fca.jpg'); height: 60vh; max-height:460px;">
+            <div class="container max-w-4xl mx-auto text-center break-normal flex flex-col items-center pt-8">
                 <!--Title-->
-                <div class="flex flex-col items-center">
-                    <p class="text-xl md:text-2xl font-semibold text-center text-customYellow"
-                        style="font-family: 'Georgia', serif; font-style: italic;">
-                    </p>
-                    <img src="~/public/favicon.webp" class="h-32 md:h-48" alt="Flowbite Logo" />
-                </div>
+                <img src="~/public/favicon.webp" class="h-48 md:h-64 mb-4" alt="Flowbite Logo" />
+                <!-- <p class="text-xl md:text-2xl font-semibold text-center text-customYellow"
+                    style="font-family: 'Georgia', serif; font-style: italic;">
+                </p> -->
             </div>
         </div>
 
@@ -63,29 +62,33 @@
                                 <img src="https://6bc41f582d60.vps.myjino.ru/uploads/IMG_8846_65f63e804a.jpeg">
                             </div>
 
-                            <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
-                                <div class="flex-1 bg-customYellow rounded-t rounded-b-none overflow-hidden shadow-lg">
-                                    <div class="w-full font-bold text-xl text-gray-900 px-6">👋 Добро пожаловать в
-                                        пространство вашего вдохновения и внутреннего роста!</div>
-                                    <p class="text-gray-800 font-serif text-xl px-6 mb-5">
-                                        Наш блог - о психологии и саморазвитии (и не только). Здесь вы найдете ключи к
-                                        пониманию себя, окружающих и мира. Мы рассказываем о том, как раскрыть свой
-                                        потенциал, обрести
-                                        гармонию и уверенность, перестать гоняться за идеалами и начать наслаждаться жизнью.
-
-                                        Каждая статья — это шаг к вашему внутреннему компасу. Вместе мы разгадаем загадки
-                                        эмоций, научимся преодолевать страхи, откроем мощь осознанности и найдем ответы на
-                                        самые важные вопросы.
-
-                                        Готовы к путешествию внутрь себя? Тогда давайте начнем прямо сейчас — ваш первый шаг
-                                        ждет за этим кликом! 🚀
+                            <div class="bg-customYellow py-10 px-6 md:px-20 text-center">
+                                <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                                    Добро пожаловать на мой блог! 🌿
+                                </h1>
+                                <p class="text-xl text-gray-700 mb-6">
+                                    Здесь начинается ваше путешествие к пониманию себя и окружающего мира.
+                                    Это пространство, где психология встречается с саморазвитием,
+                                    а вдохновение становится вашим верным спутником.
+                                </p>
+                                <div class="text-left md:text-center text-gray-700">
+                                    <p class="text-lg md:text-xl mb-4">
+                                        🔍 <strong>Что вас ждет?</strong>
                                     </p>
+                                    <ul class="list-disc list-inside md:list-outside md:mx-auto text-lg leading-relaxed">
+                                        <li>Уникальные статьи, которые помогут взглянуть на привычные вещи под новым углом.
+                                        </li>
+                                        <li>Практические советы для улучшения вашей жизни.</li>
+                                        <li>Глубокие размышления о том, как найти гармонию и раскрыть свой потенциал.</li>
+                                    </ul>
                                 </div>
-
-                                <div
-                                    class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-                                    
-                                </div>
+                                <p class="text-lg text-gray-700 mt-6 italic">
+                                    Не спешите — изучайте, вдохновляйтесь, и пусть каждый визит сюда
+                                    станет шагом к вашему лучшему "я".
+                                </p>
+                                <p class="text-2xl font-semibold text-customBrown mt-6">
+                                    ✨ Добро пожаловать в мир, где каждый пост может изменить вашу жизнь! 🌟
+                                </p>
                             </div>
 
                         </a>
@@ -183,7 +186,8 @@
                                     </p> -->
                                 </a>
                             </div>
-                            <div class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                            <div
+                                class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
                                 <!-- <div class="flex items-center justify-between">
                                     <img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name"
                                         src="http://i.pravatar.cc/300" alt="Avatar of Author">
@@ -202,12 +206,15 @@
                                     <div class="w-full font-bold text-xl text-gray-900 px-6">Сегодня...
                                     </div>
                                     <p class="text-gray-800 font-serif text-base px-6 mb-5"
-                                    style="font-family: 'Georgia', serif; font-style: italic;">
-                                        Придёт день, когда ты поймёшь, что всю вселенную ты можешь найти внутри себя... И тогда ты станешь волшебником. Став волшебником, ты уже не будешь жить в мире - этот мир будет жить в тебе.
+                                        style="font-family: 'Georgia', serif; font-style: italic;">
+                                        Придёт день, когда ты поймёшь, что всю вселенную ты можешь найти внутри себя... И
+                                        тогда ты станешь волшебником. Став волшебником, ты уже не будешь жить в мире - этот
+                                        мир будет жить в тебе.
                                     </p>
                                 </a>
                             </div>
-                            <div class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                            <div
+                                class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
                                 <!-- <div class="flex items-center justify-between">
                                     <img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name"
                                         src="http://i.pravatar.cc/300" alt="Avatar of Author">
@@ -232,7 +239,8 @@
                                     </p>
                                 </a>
                             </div>
-                            <div class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                            <div
+                                class="flex-none mt-auto bg-customYellow rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
                                 <!-- <div class="flex items-center justify-between">
                                     <img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name"
                                         src="http://i.pravatar.cc/300" alt="Avatar of Author">
@@ -272,19 +280,20 @@
 
                 <!--Subscribe-->
                 <div class="container font-sans bg-customBrown rounded mt-8 p-4 md:p-24 text-center">
-                    <div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url(''); height: 60vh; max-height:460px;">
-            <div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
-                <!--Title-->
-                <div class="flex flex-col items-center">
-                    <p class="text-xl md:text-2xl font-semibold text-center text-customYellow"
-                        style="font-family: 'Georgia', serif; font-style: italic;">
-                        Подпишись на 
-                    </p>
-                    <img src="~/public/favicon.webp" class="h-32 md:h-48" alt="Flowbite Logo" />
-                </div>
-            </div>
-        </div>
-                    <h2 class="font-bold break-normal text-2xl md:text-4xl">и получай новости первым</h2>
+                    <div class="w-full m-0 p-0 bg-cover bg-bottom"
+                        style="background-image:url(''); height: 60vh; max-height:460px;">
+                        <div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+                            <!--Title-->
+                            <div class="flex flex-col items-center">
+                                <p class="text-xl md:text-2xl font-semibold text-center text-customYellow"
+                                    style="font-family: 'Georgia', serif; font-style: italic;">
+                                    Подпишись на
+                                </p>
+                                <img src="~/public/favicon.webp" class="h-32 md:h-48" alt="Flowbite Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="font-bold break-normal text-2xl md:text-4xl text-customYellow">и получай новости первым</h2>
                     <!-- <h3 class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl"></h3> -->
                     <div class="w-full text-center pt-4">
                         <form action="#">
@@ -292,7 +301,7 @@
                                 <input type="email" placeholder="youremail@example.com"
                                     class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
                                 <button type="submit"
-                                    class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-customYellow text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Подписаться</button>
+                                    class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-customYellow text-customBrown text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-customLight">Подписаться</button>
                             </div>
                         </form>
                     </div>
@@ -301,10 +310,10 @@
 
 
                 <!--Author-->
-                <div class="flex w-full items-center font-sans p-8 md:p-24">
+                <!-- <div class="flex w-full items-center font-sans p-8 md:p-24">
                     <img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author">
                     <div class="flex-1">
-                        <p class="text-base font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
+                        <p class="text-base font-bold text-base md:text-xl leading-none">Обо мне</p>
                         <p class="text-gray-600 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by <a
                                 class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500"
                                 href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a></p>
@@ -314,7 +323,7 @@
                             class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">Read
                             More</a>
                     </div>
-                </div>
+                </div> -->
                 <!--/Author-->
 
             </div>
@@ -364,5 +373,4 @@ onMounted(() => api())
     font-size: 100px;
     color: white;
     mix-blend-mode: multiply;
-}
-</style>
+}</style>
