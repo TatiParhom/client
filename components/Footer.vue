@@ -1,11 +1,11 @@
 <template>
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-customLight dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="~/public/favicon.webp" class="w-full md:w-80 md:h-52" alt="Flowbite Logo" />
-                        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span> -->
+                        <!--<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span>-->
                     </NuxtLink>
                     <!--<a href="/" class="flex items-center">
                     <img src="~/public/favicon.webp" class=" h-50"

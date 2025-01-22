@@ -10,7 +10,13 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBrown: '#91736C',
+        customLight: '#FFFCF5',
+        customYellow: '#FFEEC0',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),
@@ -18,4 +24,6 @@ export default {
 
   darkMode: 'class',
 }
+
+
 
