@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2 class="text-4xl font-extrabold my-4 dark:text-white">Блог</h2>
+    <h2 class="text-customBrown text-center text-4xl font-extrabold my-4 dark:text-white">Блог</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 mb-4">
       <article v-for="post in displayedPosts" :key="post.id"
         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -13,7 +13,7 @@
           </NuxtLink>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ post.desc }}</p>
           <NuxtLink :to="'/post/' + post.documentId"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-customBrown rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-customBrown dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-customYellow bg-customBrown rounded-lg hover:bg-customYellow hover:text-customBrown focus:ring-4 focus:outline-none focus:ring-blue-300  dark:border-customBrown dark:text-customYellow dark:hover:text-customBrown dark:hover:bg-customYellow dark:focus:ring-customBrown">
             Подробнее
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
               viewBox="0 0 14 10">
@@ -25,7 +25,7 @@
       </article>
     </div>
     <button v-if="!(displayedPosts.length === posts.length)" @click="loadMore" type="button"
-      class="w-full text-customBrown hover:text-white border border-customBrown hover:bg-customBrown focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-customBrown dark:text-customBrown dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-customBrown">Смотреть
+      class="w-full text-customBrown hover:text-white border border-customBrown hover:bg-customBrown focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-customBrown dark:text-customBrown dark:hover:text-customBrown dark:hover:bg-customYellow dark:focus:ring-customBrown">Смотреть
       еще</button>
   </main>
 </template>
@@ -50,7 +50,7 @@
 const base_url = "https://6bc41f582d60.vps.myjino.ru"
 const api = await $fetch('https://6bc41f582d60.vps.myjino.ru/api/posts?populate=*')
 const posts = api.data
-const displayedPosts = ref(posts.slice(0, 4)) // отображаем первые 12 статей
+const displayedPosts = ref(posts.slice(0, 4)) // отображаем первые 4 статьи
 const loadMore = () => displayedPosts.value = posts.slice(0, displayedPosts.value.length + 4)
 
 

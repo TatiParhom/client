@@ -1,5 +1,6 @@
 <template>
-    <footer class="bg-customLight dark:bg-gray-900">
+    <footer class="bg-cover bg-center bg-customLight dark:bg-gray-900"
+    style="background-image: url('https://6bc41f582d60.vps.myjino.ru/uploads/IMG_2003_2d89f52fca.jpg');">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
@@ -29,10 +30,16 @@
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Социальные сети</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                                <a href="https://t.me/tatiana_parhomova" class="hover:underline ">Telegram</a>
                             </li>
-                            <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                            <li class="mb-4">
+                                <a href="https://vk.com/tatiana_parkhomova" class="hover:underline">VK</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="hhttps://www.instagram.com/p/CGyzECIlvHrt1BdzzNNwhzMxHFm9Ozj7Xus_h00/?igsh=YzZucnE1eGU2Njkx" class="hover:underline">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="hhttps://www.instagram.com/p/CGyzECIlvHrt1BdzzNNwhzMxHFm9Ozj7Xus_h00/?igsh=YzZucnE1eGU2Njkx" class="hover:underline">WatsApp</a>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +59,7 @@
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
-                        href="https://github.com/TatiParhom/blognew.git" class="hover:underline">Татьяна Пархомова™</a>. Все
+                        href="/contact" class="hover:underline">Татьяна Пархомова™</a>. Все
                     права защищены.
                 </span>
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
