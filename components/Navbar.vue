@@ -3,7 +3,8 @@
      style="background-image: url('https://6bc41f582d60.vps.myjino.ru/uploads/IMG_2003_2d89f52fca.jpg');">
     <div class="flex flex-wrap items-center justify-between mx-auto py-4">
         <NuxtLink to="/" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
-            <img src="~/public/favicon.webp"  alt="Flowbite Logo" />
+            <img src="~/public/favicon.webp" 
+            class="w-full md:w-80 md:h-52"  alt="Flowbite Logo" />
             <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и саморазвитие</span> -->
         </NuxtLink>
       <div class="flex gap-8 md:order-2">
@@ -79,6 +80,12 @@
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-customBrown md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               :class="{ 'md:text-customBrown': isActive('blog') || isActive('post') || isActive('category'), 'dark:md:text-customBrown': isActive('blog') || isActive('post') || isActive('category') }">
               Блог</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/foryou"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-customBrown md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              :class="{ 'md:text-customBrown': isActive(''), 'dark:md:text-blue-700': isActive('') }">
+              Для тебя</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/contact"
